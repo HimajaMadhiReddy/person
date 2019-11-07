@@ -11,7 +11,7 @@ public class MongoConfiguration extends AbstractMongoConfiguration {
 
     @Override
     protected String getDatabaseName(){
-        return "person";
+        return "persons";
     }
 
     @Override
