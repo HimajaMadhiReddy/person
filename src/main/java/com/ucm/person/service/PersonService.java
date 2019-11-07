@@ -29,10 +29,11 @@ public class PersonService {
 
     public Person validateCreateRequest(Person person) throws URISyntaxException, DuplicateRecordException, InvalidRequestException {
 
-        URI uri = new URI("http://localhost:8083/authentications");
+
         
         person.setResourceId(UUID.randomUUID());
 
+        URI uri = new URI("http://localhost:8083/authentications");
         Authentication authentication = new Authentication();
         authentication.setUserName(person.getUserName());
         authentication.setPassword(person.getPassword());
