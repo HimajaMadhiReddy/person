@@ -38,7 +38,7 @@ public class PersonController {
 
    }
     @ResponseBody
-    @RequestMapping(value = "/{resourceId}",produces = "application/json",method = RequestMethod.PUT)
+    @RequestMapping(value = "/{resourceId}",method = RequestMethod.PUT, produces = "application/json")
 
     Person updatePerson(@PathVariable String resourceId,@RequestBody Person person) throws InvalidRequestException, ResourceNotFoundException {
 
