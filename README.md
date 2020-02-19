@@ -1,1 +1,1 @@
-# person 1...2
+# person 1
